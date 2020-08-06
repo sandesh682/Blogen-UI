@@ -32,10 +32,10 @@
               <a href="posts.html" class="nav-link">Posts</a>
            </li>
            <li class="nav-item mx-2">
-             <a href="categories.html" class="nav-link active">Categories</a>
+             <a href="categories.html" class="nav-link">Categories</a>
            </li>
            <li class="nav-item mx-2">
-              <a href="users.html" class="nav-link">Users</a>
+              <a href="users.html" class="nav-link active">Users</a>
            </li>
           </ul>
           <ul class="navbar-nav ml-auto">
@@ -58,91 +58,68 @@
     </div>
   </nav>
 
-  <!-- Posts -->
-  <header id="posts" class="py-2 bg-success text-white">
+  <!-- Edit Profile -->
+  <header id="posts" class="py-2 bg-primary text-white">
     <div class="container">
       <div class="row">
         <div class="col">
-           <h1><i class="fas fa-folder"></i> Categories</h1>
+           <h1><i class="fas fa-cog"></i> Settings</h1>
         </div>
       </div>
     </div>
   </header>
 
-  <!-- Search Posts -->
-  <section class="py-4">
+  <!-- Change Section -->
+  <section class="py-4 bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-9">
+           <div class="row">
+              <div class="col-md-4 text-center">
+                  <a href="index.html" class="btn text-dark btn-color pl-4 pl-3"><i class="fas fa-arrow-left"></i> Back to Dashboard</a>
+              </div>
+              <div class="col-md-4">
+                <a href="index.html" class="btn btn-success btn-block"><i class="fas fa-check"></i> Save Changes</a>
+              </div>
+           </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Edit Settings -->
+  <section class="py-3">
       <div class="container">
           <div class="row">
-              <div class="col-md-6 offset-6 input-group">
-                  <input type="text" class="form-control mr-0" placeholder="Search Categories...">
-                  <div class="input-group-append">
-                    <button class="btn btn-success ml-0">Submit</button>
-                  </div> 
+              <div class="col">
+                  <div class="card">
+                      <div class="card-header">
+                          <h4>Edit Settings</h4>
+                      </div>
+                      <div class="card-body">
+                          <form action="">
+                            <legend class="card-title">Allow User Registration</legend>
+                            <input type="radio" id="male" name="gender" value="yes">
+                            <label for="yes">Yes</label><br>
+                            <input type="radio" id="female" name="gender" value="no">
+                            <label for="no">No</label><br>
+                          </form>
+                          <form action="">
+                            <legend class="card-title">Homepage Format</legend>
+                            <input type="radio" id="male" name="gender" value="yes">
+                            <label for="yes">Yes</label><br>
+                            <input type="radio" id="female" name="gender" value="no">
+                            <label for="no">No</label><br>
+                          </form>
+                      </div>
+                  </div>
               </div>
           </div>
       </div>
   </section>
 
-  <!-- Latest Posts -->
-  <section class="my-3">
-       <div class="container">
-           <div class="row">
-               <div class="col">
-                   <div class="card">
-                    <div class="card-header">
-                        <h4 class="card-title">Latest Categories</h4>
-                      </div>
-                       <div class="card-body p-0">
-                        <table class="table table-striped">
-                            <thead class="thead-dark">
-                              <tr>
-                                <th scope="col">#</th>
-                                <th scope="col">Title</th>
-                                <th scope="col">Category</th>
-                                <th scope="col">Date</th>
-                                <th scope="col"></th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr>
-                                <td scope="row">1</td>
-                                <td>Post One</td>
-                                <td>Web Development</td>
-                                <td>11 Nov 1997</td>
-                                <td><button class="btn btn-secondary"><i class="fas fa-angle-double-right"></i> Details</button></td>
-                              </tr>
-                              <tr>
-                                <td scope="row">2</td>
-                                <td>Post Two</td>
-                                <td>Tech Gadgets</td>
-                                <td>12 Nov 1997</td>
-                                <td><button class="btn btn-secondary"><i class="fas fa-angle-double-right"></i> Details</button></td>
-                              </tr>
-                              <tr>
-                                <td scope="row">3</td>
-                                <td>Post Three</td>
-                                <td>Web Development</td>
-                                <td>13 Nov 1997</td>
-                                <td><button class="btn btn-secondary"><i class="fas fa-angle-double-right"></i> Details</button></td>
-                              </tr>
-                              <tr>
-                                <td scope="row">4</td>
-                                <td>Post Four</td>
-                                <td>Business</td>
-                                <td>14 Nov 1997</td>
-                                <td><button class="btn btn-secondary"><i class="fas fa-angle-double-right"></i> Details</button></td>
-                              </tr>
-                            </tbody>
-                          </table>
-                       </div>
-                   </div>
-               </div>
-           </div>
-       </div>
-  </section>
-
   <!-- Footer -->
-  <footer class="pb-4 pt-5 mt-5 bg-dark text-center text-white">
+  <footer class="pb-4 pt-5 mt-3 bg-dark text-center text-white">
     <div class="container">
       <div class="row">
         <div class="col">
@@ -156,15 +133,21 @@
     </div>
   </footer>
 
+  
+
+
   <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
     crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
     crossorigin="anonymous"></script>
+    <script src="https://cdn.ckeditor.com/4.9.2/standard/ckeditor.js"></script>
   <script>
     // Get the current year for the copyright
     $('#year').text(new Date().getFullYear());
+
+    CKEDITOR.replace('editor1');
 
   </script>
 </body>
